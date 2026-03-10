@@ -17,27 +17,17 @@ public class Venta {
     }
 
     //Gttrs
-    public int getIdVenta() {
-        return idVenta;
-    }
+    public int getIdVenta() {return idVenta;}
+    public Coche getCocheVendido() {return cocheVendido;}
+    public String getNombreCliente() {return nombreCliente;}
+    public String getFechaVenta() {return fechaVenta;}
+    public double getPrecioFinal() {return precioFinal;}
 
-    public Coche getCocheVendido() {
-        return cocheVendido;
-    }
-
-    public String getNombreCliente() {
-        return nombreCliente;
-    }
-
-    public String getFechaVenta() {
-        return fechaVenta;
-    }
-
-    public double getPrecioFinal() {
-        return precioFinal;
-    }
-
-    //Metodos de la clase coche
+    //toString
+    @Override
+    public String toString() {
+        return "Venta [idVenta=" + idVenta + ", cocheVendido=" + cocheVendido + ", nombreCliente=" + nombreCliente
+                + ", fechaVenta=" + fechaVenta + ", precioFinal=" + precioFinal + "]";
+    }    
     
-
 }
