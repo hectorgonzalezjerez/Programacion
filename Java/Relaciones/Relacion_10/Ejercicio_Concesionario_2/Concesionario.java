@@ -7,6 +7,11 @@ public class Concesionario {
     private int numCoches = 0;
     private int numVentas = 0;
 
+    //Gttr NumVentas
+    public int getNumVentas() {
+        return numVentas;
+    }
+    
     Scanner scanner = new Scanner(System.in);
 
     //Cnstr

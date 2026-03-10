@@ -30,3 +30,4 @@ public class Venta {
                 + ", fechaVenta=" + fechaVenta + ", precioFinal=" + precioFinal + "]";
     }    
 }
+

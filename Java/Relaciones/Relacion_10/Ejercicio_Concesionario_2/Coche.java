@@ -28,8 +28,8 @@ public class Coche {
     //toString
     @Override
     public String toString() {
-        return "Coche [matricula=" + matricula + ", marca=" + marca + ", modelo=" + 
-        modelo + "precio Base=" + precioBase + "estado (¿está vendido?)"+ vendido +"]";
+        return "Coche [ matricula = " + matricula + ", marca = " + marca + ", modelo = " + 
+        modelo + ", precio Base = " + precioBase + ", estado (¿está vendido?) "+ vendido +"]";
     }
 
 }
