@@ -63,7 +63,20 @@ public class Concesionario {
         return null;
     }
 
+    //Listas
 
+    public void listarCochesDisponibles() {
+    for (int i = 0; i < numCoches; i++) {
+        if (stock[i].getVendido() == false) { 
+            System.out.println(stock[i]);
+        }
+    }
+}
 
+    public void listarHistorialVentas(){
+        for(int i=0; i < numVentas;i++){
+            System.out.println(historialVentas[i]);
+        }
+    }
 
 }

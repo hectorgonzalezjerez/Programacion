@@ -22,7 +22,7 @@ public class Coche {
     public String getMarca() {return marca;}
     public String getModelo() {return modelo;}
     public double getPrecioBase() {return precioBase;}
-    public boolean isVendido() {return vendido;}
+    public boolean getVendido() {return vendido;}
 
     public void setVendido(boolean vendido) {this.vendido = vendido;}
 
