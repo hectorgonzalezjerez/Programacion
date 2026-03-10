@@ -52,9 +52,18 @@ public class Concesionario {
         return null;
     }
 
+    //buscarVentaporMatricula
+
+    public Venta buscarVenta(String matricula){
+        for(int i=0; i< numVentas ;i++){
+            if(this.historialVentas[i].getCocheVendido().getMatricula().equalsIgnoreCase(matricula)){
+                return this.historialVentas[i];
+            }
+        }
+        return null;
+    }
 
 
-    
 
 
 }
