@@ -72,11 +72,9 @@ public class Concesionario {
         }
     }
 }
-
     public void listarHistorialVentas(){
         for(int i=0; i < numVentas;i++){
             System.out.println(historialVentas[i]);
         }
     }
-
 }

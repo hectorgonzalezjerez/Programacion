@@ -29,5 +29,4 @@ public class Venta {
         return "Venta [idVenta=" + idVenta + ", cocheVendido=" + cocheVendido + ", nombreCliente=" + nombreCliente
                 + ", fechaVenta=" + fechaVenta + ", precioFinal=" + precioFinal + "]";
     }    
-    
 }
