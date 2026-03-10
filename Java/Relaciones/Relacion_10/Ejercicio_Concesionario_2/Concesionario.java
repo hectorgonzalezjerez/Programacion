@@ -28,10 +28,11 @@ public class Concesionario {
         return false;
     }
 
-    //ResgistrarVenta
-    public boolean resgistrarVenta(int idVenta, Coche cocheVendido, String nombreCliente, String fechaVenta, double precioFinal){
+    //RegistrarVenta
+    public boolean registrarVenta(int idVenta, Coche cocheVendido, String nombreCliente, String fechaVenta, double precioFinal){
         
         if( numVentas < historialVentas.length){
+            cocheVendido.setVendido(true);
             Venta nuevaVenta = new Venta(idVenta, cocheVendido, nombreCliente, fechaVenta, precioFinal);
             this.historialVentas[numVentas] = nuevaVenta;
             numVentas ++;
@@ -40,5 +41,16 @@ public class Concesionario {
         return false;
     }
 
-    
+    //buscarCoche
+
+    public Coche buscarCoche(String matricula){
+        for(int i=0; i< numCoches; i++){
+            if (this.stock[i].getMatricula().equalsIgnoreCase(matricula)) {
+            return this.stock[i];
+            }  
+        }
+        return null;
+    }
+
+
 }
